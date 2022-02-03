@@ -11,13 +11,13 @@ int main() {
     setlocale(LC_ALL,"Rus");
     int number_one, number_two, number_three;
 
-    cout<<"Введите три числа"<< endl;
+    cout<<"Enter three numbers"<< endl;
     cin>>number_one>>number_two>>number_three;
-    cout<<"Вы вели "<<number_one<<", "<< number_two<<" и "<<number_three<<endl;
+    cout<<"you entered "<<number_one<<", "<< number_two<<" and "<<number_three<<endl;
 
     Swap_Three(&number_one,&number_two,&number_three);
 
-    cout<<"После пемеремещения чисел"<<endl;
+    cout<<"After moving the numbers"<<endl;
     cout<< number_one<<" "<< number_two <<" "<<number_three<<endl;
 
     Check(number_one, number_two, number_three);
@@ -26,9 +26,9 @@ int main() {
 
 int Check(int number_one, int number_two, int number_three){
     if(number_one - number_two > 0 && number_one - number_two == number_two - number_three){
-        cout<<"Числа образуют арифм. прогрессию";
+        cout<<"Numbers form arithm. progression";
     } else{
-        cout<<"Не образуют";
+        cout<<"Do not form arithms. progression";
     }
 }
 
