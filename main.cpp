@@ -8,7 +8,6 @@ int Swap(int *number_one, int *number_two);
 
 int main() {
 
-    setlocale(LC_ALL,"Rus");
     int number_one, number_two, number_three;
 
     cout<<"Enter three numbers"<< endl;
